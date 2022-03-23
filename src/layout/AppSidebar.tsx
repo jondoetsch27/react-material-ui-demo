@@ -1,14 +1,11 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
+import Drawer from '@mui/material/Drawer';
 import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+import NavigationList from "./NavigationList";
 import colors from "./../assets/colors.module.scss"
 
 const AppSidebar: React.FC = () => {
@@ -21,8 +18,10 @@ const AppSidebar: React.FC = () => {
                 height: "8vh"
             }}>
                 <Toolbar>
-                    <Typography variant="h6" noWrap component="div">
-                        Clipped drawer
+                    <Typography
+                        variant="h6"
+                        noWrap component="div">
+                        Main Menu
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -45,8 +44,7 @@ const AppSidebar: React.FC = () => {
                         width: "15vw",
                         boxSizing: 'border-box'
                     },
-                }}
-            >
+                }}>
                 <Toolbar/>
                 <Box sx={{
                     alignItems: "left",
@@ -61,17 +59,7 @@ const AppSidebar: React.FC = () => {
                     top: "7vh",
                     width: "13vw"
                 }}>
-                    <List>
-                        {['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'].map(
-                            (text, index) => (
-                            <ListItem button key={text}>
-                                <ListItemIcon>
-
-                                </ListItemIcon>
-                                <ListItemText primary={text}/>
-                            </ListItem>
-                        ))}
-                    </List>
+                    <NavigationList/>
                 </Box>
             </Drawer>
         </Box>
