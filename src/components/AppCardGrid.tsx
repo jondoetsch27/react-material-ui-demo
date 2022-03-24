@@ -1,7 +1,7 @@
 import React from "react";
 import {Box, Grid} from "@mui/material";
 import colors from "../assets/colors.module.scss"
-import AppCard, {CardProperties} from "../components/AppCard";
+import AppCard, {CardProperties} from "./AppCard";
 
 export type CardGridProperties = {
     backgroundColor: typeof colors.ghostWhite
@@ -11,7 +11,6 @@ export type CardGridProperties = {
 }
 
 const AppCardGrid: React.FC<CardGridProperties> = (properties: CardGridProperties) => {
-
     let cardList: any[] = []
     for (let i = 0; i < properties.numberOfCards; i++) {
         cardList.push(
@@ -24,7 +23,6 @@ const AppCardGrid: React.FC<CardGridProperties> = (properties: CardGridPropertie
             </Grid>
         )
     }
-
     return (
         <Box sx={{
             backgroundColor: properties.backgroundColor,

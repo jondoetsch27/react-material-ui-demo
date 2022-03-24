@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
-import Home from "./home/Home";
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import Option1 from "./option1/Option1";
-import Option2 from "./option2/Option2";
-import Option3 from "./option3/Option3";
-import Option4 from "./option4/Option4";
-import Option5 from "./option5/Option5";
+import Home from "./pages/Home";
+import Option1 from "./pages/Option1";
+import Option2 from "./pages/Option2";
+import Option3 from "./pages/Option3";
+import Option4 from "./pages/Option4";
+import Option5 from "./pages/Option5";
 
 function App() {
     return (

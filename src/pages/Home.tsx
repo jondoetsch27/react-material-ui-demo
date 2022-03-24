@@ -1,7 +1,7 @@
 import React from "react";
-import AppCardGrid from "../layout/AppCardGrid";
-import AppLayout from "../layout/AppLayout";
-import colors from "./../assets/colors.module.scss"
+import AppCardGrid from "../components/AppCardGrid";
+import AppLayout from "../components/AppLayout";
+import colors from "../assets/colors.module.scss"
 
 const Home: React.FC = () => {
     return (

@@ -1,9 +1,9 @@
 import React from "react";
-import AppCardGrid from "../layout/AppCardGrid";
-import AppLayout from "../layout/AppLayout";
+import AppCardGrid from "../components/AppCardGrid";
+import AppLayout from "../components/AppLayout";
 import colors from "../assets/colors.module.scss";
 
-const Option2: React.FC = () => {
+const Option5: React.FC = () => {
     return (
         <>
             <AppLayout/>
@@ -12,7 +12,7 @@ const Option2: React.FC = () => {
                 borderColor={colors.ghostWhite}
                 cardProperties={{
                     backgroundColor: colors.terraCotta,
-                    cardText: "Option 2",
+                    cardText: "Option 5",
                     textColor: colors.royalBlue
                 }}
                 numberOfCards={3}
@@ -21,4 +21,4 @@ const Option2: React.FC = () => {
     )
 }
 
-export default Option2
+export default Option5
