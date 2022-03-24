@@ -2,12 +2,12 @@ import React from "react";
 import AppSidebar from "./AppSidebar";
 
 class AppLayout extends React.Component {
-    componentDidMount() {
+    /*componentDidMount() {
         alert("AppLayout mounted")
     }
     componentWillUnmount() {
         alert("AppLayout unmounted")
-    }
+    }*/
     render() {
         return (
             <AppSidebar/>

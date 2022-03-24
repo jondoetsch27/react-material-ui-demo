@@ -3,12 +3,33 @@ import {Box, Grid} from "@mui/material";
 import colors from "../assets/colors.module.scss"
 import AppCard, {CardProperties} from "../components/AppCard";
 
-const AppCardGrid: React.FC<CardProperties> = (properties: CardProperties) => {
+export type CardGridProperties = {
+    backgroundColor: typeof colors.ghostWhite
+    borderColor: typeof colors.ghostWhite
+    cardProperties: CardProperties
+    numberOfCards: number
+}
+
+const AppCardGrid: React.FC<CardGridProperties> = (properties: CardGridProperties) => {
+
+    let cardList: any[] = []
+    for (let i = 0; i < properties.numberOfCards; i++) {
+        cardList.push(
+            <Grid item xs={4}>
+                <AppCard
+                    backgroundColor={properties.cardProperties.backgroundColor}
+                    cardText={properties.cardProperties.cardText}
+                    textColor={properties.cardProperties.textColor}
+                />
+            </Grid>
+        )
+    }
+
     return (
         <Box sx={{
-            backgroundColor: colors.ghostWhite,
+            backgroundColor: properties.backgroundColor,
             border: "solid",
-            borderColor: colors.ghostWhite,
+            borderColor: properties.borderColor,
             height: "92vh",
             left: "15%",
             position: "absolute",
@@ -16,13 +37,7 @@ const AppCardGrid: React.FC<CardProperties> = (properties: CardProperties) => {
             width: "85vw"
         }}>
             <Grid columns={12} container direction={"row"} rowSpacing={0.5} spacing={0.5}>
-                <Grid item xs={4}>
-                    <AppCard
-                        backgroundColor={properties.backgroundColor}
-                        cardText={properties.cardText}
-                        textColor={properties.textColor}
-                    />
-                </Grid>
+                {cardList}
             </Grid>
         </Box>
     )

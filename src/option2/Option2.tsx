@@ -8,9 +8,14 @@ const Option2: React.FC = () => {
         <>
             <AppLayout/>
             <AppCardGrid
-                backgroundColor={colors.rifleGreen}
-                cardText={"Option 2"}
-                textColor={colors.ghostWhite}
+                backgroundColor={colors.ghostWhite}
+                borderColor={colors.ghostWhite}
+                cardProperties={{
+                    backgroundColor: colors.terraCotta,
+                    cardText: "Option 2",
+                    textColor: colors.royalBlue
+                }}
+                numberOfCards={3}
             />
         </>
     )
