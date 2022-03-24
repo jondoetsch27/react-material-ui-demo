@@ -26,7 +26,12 @@ const NavigationList: React.FC = ({children}) => {
                     <ListItemText
                         color={colors.ghostWhite}
                         primary={"Home"}
-                        sx={{color: colors.ghostWhite, fontSize: 12}}
+                        primaryTypographyProps={{
+                            align: "center",
+                            color: colors.ghostWhite,
+                            fontSize: 20,
+                            fontWeight: "bolder"
+                        }}
                     />
                 </ListItemButton>
             </ListItem>
@@ -47,7 +52,12 @@ const NavigationList: React.FC = ({children}) => {
                     <ListItemText
                         color={colors.ghostWhite}
                         primary={"Option 1"}
-                        sx={{color: colors.ghostWhite, fontSize: 12}}
+                        primaryTypographyProps={{
+                            align: "center",
+                            color: colors.ghostWhite,
+                            fontSize: 20,
+                            fontWeight: "bolder"
+                        }}
                     />
                 </ListItemButton>
             </ListItem>
@@ -67,7 +77,12 @@ const NavigationList: React.FC = ({children}) => {
                     <ListItemText
                         color={colors.ghostWhite}
                         primary={"Option 2"}
-                        sx={{color: colors.ghostWhite, fontSize: 12}}
+                        primaryTypographyProps={{
+                            align: "center",
+                            color: colors.ghostWhite,
+                            fontSize: 20,
+                            fontWeight: "bolder"
+                        }}
                     />
                 </ListItemButton>
             </ListItem>
@@ -87,7 +102,12 @@ const NavigationList: React.FC = ({children}) => {
                     <ListItemText
                         color={colors.ghostWhite}
                         primary={"Option 3"}
-                        sx={{color: colors.ghostWhite, fontSize: 12}}
+                        primaryTypographyProps={{
+                            align: "center",
+                            color: colors.ghostWhite,
+                            fontSize: 20,
+                            fontWeight: "bolder"
+                        }}
                     />
                 </ListItemButton>
             </ListItem>
@@ -107,7 +127,12 @@ const NavigationList: React.FC = ({children}) => {
                     <ListItemText
                         color={colors.ghostWhite}
                         primary={"Option 4"}
-                        sx={{color: colors.ghostWhite, fontSize: 12}}
+                        primaryTypographyProps={{
+                            align: "center",
+                            color: colors.ghostWhite,
+                            fontSize: 20,
+                            fontWeight: "bolder"
+                        }}
                     />
                 </ListItemButton>
             </ListItem>
@@ -127,7 +152,12 @@ const NavigationList: React.FC = ({children}) => {
                     <ListItemText
                         color={colors.ghostWhite}
                         primary={"Option 5"}
-                        sx={{color: colors.ghostWhite, fontSize: 12}}
+                        primaryTypographyProps={{
+                            align: "center",
+                            color: colors.ghostWhite,
+                            fontSize: 20,
+                            fontWeight: "bolder"
+                        }}
                     />
                 </ListItemButton>
             </ListItem>
