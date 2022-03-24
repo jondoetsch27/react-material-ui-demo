@@ -19,14 +19,14 @@ const NavigationList: React.FC = ({children}) => {
                     sx={{
                         backgroundColor: colors.royalBlue,
                         border: "solid",
-                        borderColor: colors.tuftsBlue
+                        borderColor: colors.tuftsBlue,
+                        '&:hover': {backgroundColor: colors.terraCotta}
                     }}
                 >
                     <ListItemText
-                        aria-setsize={12}
                         color={colors.ghostWhite}
                         primary={"Home"}
-                        sx={{color: colors.ghostWhite}}
+                        sx={{color: colors.ghostWhite, fontSize: 12}}
                     />
                 </ListItemButton>
             </ListItem>
@@ -39,14 +39,15 @@ const NavigationList: React.FC = ({children}) => {
                     sx={{
                         backgroundColor: colors.royalBlue,
                         border: "solid",
-                        borderColor: colors.tuftsBlue
+                        borderColor: colors.tuftsBlue,
+                        width: "10vw",
+                        '&:hover': {backgroundColor: colors.terraCotta}
                     }}
                 >
                     <ListItemText
-                        aria-setsize={12}
                         color={colors.ghostWhite}
                         primary={"Option 1"}
-                        sx={{color: colors.ghostWhite}}
+                        sx={{color: colors.ghostWhite, fontSize: 12}}
                     />
                 </ListItemButton>
             </ListItem>
@@ -59,14 +60,14 @@ const NavigationList: React.FC = ({children}) => {
                     sx={{
                         backgroundColor: colors.royalBlue,
                         border: "solid",
-                        borderColor: colors.tuftsBlue
+                        borderColor: colors.tuftsBlue,
+                        '&:hover': {backgroundColor: colors.terraCotta}
                     }}
                 >
                     <ListItemText
-                        aria-setsize={12}
                         color={colors.ghostWhite}
                         primary={"Option 2"}
-                        sx={{color: colors.ghostWhite}}
+                        sx={{color: colors.ghostWhite, fontSize: 12}}
                     />
                 </ListItemButton>
             </ListItem>
@@ -79,14 +80,14 @@ const NavigationList: React.FC = ({children}) => {
                     sx={{
                         backgroundColor: colors.royalBlue,
                         border: "solid",
-                        borderColor: colors.tuftsBlue
+                        borderColor: colors.tuftsBlue,
+                        '&:hover': {backgroundColor: colors.terraCotta}
                     }}
                 >
                     <ListItemText
-                        aria-setsize={12}
                         color={colors.ghostWhite}
                         primary={"Option 3"}
-                        sx={{color: colors.ghostWhite}}
+                        sx={{color: colors.ghostWhite, fontSize: 12}}
                     />
                 </ListItemButton>
             </ListItem>
@@ -99,14 +100,14 @@ const NavigationList: React.FC = ({children}) => {
                     sx={{
                         backgroundColor: colors.royalBlue,
                         border: "solid",
-                        borderColor: colors.tuftsBlue
+                        borderColor: colors.tuftsBlue,
+                        '&:hover': {backgroundColor: colors.terraCotta,}
                     }}
                 >
                     <ListItemText
-                        aria-setsize={12}
                         color={colors.ghostWhite}
                         primary={"Option 4"}
-                        sx={{color: colors.ghostWhite}}
+                        sx={{color: colors.ghostWhite, fontSize: 12}}
                     />
                 </ListItemButton>
             </ListItem>
@@ -119,14 +120,14 @@ const NavigationList: React.FC = ({children}) => {
                     sx={{
                         backgroundColor: colors.royalBlue,
                         border: "solid",
-                        borderColor: colors.tuftsBlue
+                        borderColor: colors.tuftsBlue,
+                        '&:hover': {backgroundColor: colors.terraCotta,}
                     }}
                 >
                     <ListItemText
-                        aria-setsize={12}
                         color={colors.ghostWhite}
                         primary={"Option 5"}
-                        sx={{color: colors.ghostWhite}}
+                        sx={{color: colors.ghostWhite, fontSize: 12}}
                     />
                 </ListItemButton>
             </ListItem>
