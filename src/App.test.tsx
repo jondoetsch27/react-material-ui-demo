@@ -1,9 +1,21 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import ReactDOM from "react-dom";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('integration testing', function () {
+    let root: HTMLDivElement = HTMLDivElement.prototype
+
+    beforeEach(() => {
+      root = document.createElement("div")
+    })
+
+    it('should', async () => {
+        ReactDOM.render(<App/>, root)
+        expect(root.hasAttribute("home")).toBeTruthy()
+    });
+
+    it('workshop', async () => {
+
+    })
 });
+

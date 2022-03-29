@@ -5,7 +5,7 @@ import colors from "../assets/colors.module.scss";
 
 const Option4: React.FC = () => {
     return (
-        <>
+        <div className={"option4"}>
             <AppLayout/>
             <AppCardGrid
                 backgroundColor={colors.ghostWhite}
@@ -17,7 +17,7 @@ const Option4: React.FC = () => {
                 }}
                 numberOfCards={3}
             />
-        </>
+        </div>
     )
 }
 
